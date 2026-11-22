@@ -316,9 +316,9 @@ onMounted(async () => {
   window.addEventListener('resize', onResize)
   document.addEventListener('visibilitychange', onVisible)
 
-  // 地图 GeoJSON 注册
+  // 地图 GeoJSON 注册（用 BASE_URL 拼路径：本地是 /，GitHub Pages 是 /gz-city-dashboard/）
   try {
-    const geo = await fetch('/guangdong.json').then((r) => r.json())
+    const geo = await fetch(`${import.meta.env.BASE_URL}guangdong.json`).then((r) => r.json())
     echarts.registerMap('guangdong', geo)
     window.__gdReady = true
     // 地图数据到达后补一次渲染

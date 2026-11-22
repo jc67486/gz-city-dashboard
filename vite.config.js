@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-export default defineConfig({
+// GitHub Pages 部署在 /仓库名/ 子路径下，生产构建要带 base；
+// 本地 dev 仍走根路径，避免 http://localhost:5173/ 打不开
+const REPO = 'gz-city-dashboard'
+
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? `/${REPO}/` : '/',
   plugins: [vue()],
   server: {
     port: 5173,
@@ -19,4 +24,4 @@ export default defineConfig({
       }
     }
   }
-})
+}))
