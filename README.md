@@ -121,7 +121,7 @@ python -m pytest tests -q --cov=app --cov-report=term-missing
 |---|---|---|
 | 接口响应 | 平均 45 ms（冷启动 181 ms） | 6 个接口逐个计时，含 60s 缓存命中 |
 | 构建产物 | 826 KB / 626 模块 | `npm run build` 输出 + `dist` 目录汇总 |
-| echarts 分包 | gzip 后 210.8 KB | 构建输出 |
+| ECharts 分包 | gzip 后 210.8 KB | 构建输出 |
 | 数据量 | 21 市 + 7560 行明细 + 6 年趋势 | `python seed.py` 日志 |
 | 测试覆盖率 | 97% | `pytest --cov=app` |
 
