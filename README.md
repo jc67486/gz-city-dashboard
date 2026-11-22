@@ -1,7 +1,7 @@
 # 广东省城市运行监测大屏
 
 > Vue 3 + Vite + ECharts 5 + Flask + Pandas ｜ 21 个地级市 × 72 个月的指标看板
-> 在线演示：【部署后把 Vercel 地址填这里】
+> 在线演示：<https://jc67486.github.io/gz-city-dashboard/>
 
 ![大屏主视图](shot/screen1.png)
 
