@@ -144,7 +144,9 @@ big-screen/
 │   ├── analyze.py          # CR4 / HHI / CV / Zipf 计算 + 4 张图
 │   ├── build_report.py     # 生成分析报告 DOCX
 │   ├── tests/              # pytest（13 个用例，覆盖率 97%）
-│   └── data/               # 原始表 / 明细 CSV / SQLite（不入库，seed.py 可重建）
+│   ├── data/               # 原始表 / 明细 CSV / SQLite（不入库，seed.py 可重建）
+│   ├── out/                # analyze.py 输出：4 张图 + metrics.json（已入库）
+│   └── 广东省21市经济结构对比分析.docx / .pdf   # build_report.py 产出
 ├── src/
 │   ├── api/index.js        # Axios 封装 + 错误码映射 + 静态模式切换
 │   ├── hooks/useChart.js   # 图表实例统一管理（创建 / resize / 销毁）
@@ -153,5 +155,6 @@ big-screen/
 ├── public/
 │   ├── guangdong.json      # 广东 GeoJSON
 │   └── mock/               # 静态数据快照
+├── shot/                   # 界面截图（README 引用）
 └── .github/workflows/      # push 自动部署 GitHub Pages
 ```
