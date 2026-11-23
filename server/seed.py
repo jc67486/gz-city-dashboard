@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-广州城市数据可视化大屏 —— 数据准备与清洗脚本
+广东省城市运行监测系统 —— 数据准备与清洗脚本
 流程：生成"脏"原始数据 -> Pandas 清洗 -> SQLite 入库（建索引） -> 打印清洗日志
 运行：python seed.py
 产出：data/raw_guangdong_stat.xlsx（汇总）、data/fact_month.csv（月度明细）、data/dashboard.db

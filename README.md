@@ -1,4 +1,4 @@
-# 广东省城市运行监测大屏
+# 广东省城市运行监测系统
 
 <p>
   <img alt="Vue" src="https://img.shields.io/badge/Vue-3.4-42b883?logo=vue.js&logoColor=white">
@@ -14,7 +14,7 @@
 > ### [🌐 在线演示](https://jc67486.github.io/gz-city-dashboard/)
 > 数据经 Pandas 清洗入库后由 Flask 提供接口，前端渲染 6 类图表；线上版本使用构建期导出的静态快照。
 
-![大屏主视图](shot/screen1.png)
+![主视图](shot/screen1.png)
 
 <p align="center">
   <sub>1920×1080 主视图 · KPI + 折线柱状混合图 + 地图散点 + Top10 排行 + 区域占比，共 6 类图表</sub>
